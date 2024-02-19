@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Button } from 'flowbite-react';
 import { HiOutlineArrowUp, HiOutlineArrowDown, HiOutlineArrowRight } from 'react-icons/hi';
 
-const PriorityButton = ({ todo, updateTodo }) => {
+const PriorityButton = ({ todo, updatePriority }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [priority, setPriority] = useState(todo.priority);
 
   const handleClick = (newPriority) => {
     setPriority(newPriority);
-    updateTodo(todo.id, { ...todo, priority: newPriority });
+    updatePriority(todo.id, { ...todo, priority: newPriority });
     setIsEditing(false);
   };
 

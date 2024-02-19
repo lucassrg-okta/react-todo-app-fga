@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Button, Dropdown } from 'flowbite-react';
 
-const StatusButton = ({ todo, updateTodo }) => {
+const StatusButton = ({ todo, updateStatus }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [status, setStatus] = useState(todo.status);
 
   const handleClick = (newStatus) => {
     setStatus(newStatus);
-    updateTodo(todo.id, { ...todo, status: newStatus });
+    updateStatus(todo.id, { ...todo, status: newStatus });
     setIsEditing(false);
   };
 

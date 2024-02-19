@@ -4,7 +4,7 @@ import PriorityButton from './PriorityButton';
 import StatusButton from './StatusButton';
 import { HiOutlineTrash } from 'react-icons/hi';
 
-const TodoItem = ({ todo, deleteTodo, updatePriority, updateStatus }) => {
+const HR = ({ todo, deleteTodo, updatePriority, updateStatus }) => {
   const [isEditing, setIsEditing] = useState(false);
   // const [priority, setPriority] = useState(todo.priority);
 
@@ -21,4 +21,4 @@ const TodoItem = ({ todo, deleteTodo, updatePriority, updateStatus }) => {
   );
 };
 
-export default TodoItem;
+export default HR;

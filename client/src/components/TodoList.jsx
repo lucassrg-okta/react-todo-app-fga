@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoItem from './TodoItem';
 
-const TodoList = ({ todos, deleteTodo, updateTodo }) => {
+const TodoList = ({ todos, deleteTodo, updatePriority, updateStatus }) => {
   return (
     <div className="mt-4">
       {todos.map(todo => (
@@ -9,7 +9,8 @@ const TodoList = ({ todos, deleteTodo, updateTodo }) => {
           key={todo.id}
           todo={todo}
           deleteTodo={deleteTodo}
-          updateTodo={updateTodo}
+          updatePriority={updatePriority}
+          updateStatus={updateStatus}
         />
       ))}
     </div>

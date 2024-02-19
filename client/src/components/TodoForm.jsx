@@ -18,7 +18,7 @@ const TodoForm = ({ addTodo }) => {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Add a new task"
-        className="flex-1"
+        className="flex-1 w-96"
       />
       <Button className='bg-blue-500' type="submit">Add Task</Button>
     </form>

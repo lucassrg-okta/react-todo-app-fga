@@ -8,6 +8,10 @@
     "client": "cd client && npm start"
   },
   "dependencies": {
-    "if-env": "^1.0.4"
+    "autoprefixer": "^10.4.17",
+    "flowbite": "^2.3.0",
+    "if-env": "^1.0.4",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
   }
 }
